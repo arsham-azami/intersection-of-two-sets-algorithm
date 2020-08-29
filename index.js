@@ -17,8 +17,8 @@ class Intersection{
     }
 }
 
-const setOne = [43, 65, 21, 65, 76]
-const setTwo = [90, 65, 98, 60, 23]
+const setOne = [43, 65, 21, 66, 76]
+const setTwo = [90, 65, 98, 60, 23, 76, 21]
 const set = new Intersection(setOne, setTwo)
 
 set.getIntersection()
