@@ -33,7 +33,7 @@ class Intersection {
 		}
 		return this.newarr;
 	}
-	getunion(): number[] {
+	public getunion(): number[] {
 		return this.union();
 	}
 }
