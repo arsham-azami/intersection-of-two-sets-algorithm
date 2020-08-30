@@ -9,7 +9,7 @@ class Intersection {
 		this.newarr = [];
 	}
 
-	private Intersection() {
+	private Intersection(): number[] {
 		for (let x = 0; x < this.arrOne.length; x++) {
 			if (this.arrTwo.includes(this.arrOne[x])) {
 				this.newarr.push(this.arrOne[x]);
@@ -18,8 +18,20 @@ class Intersection {
 		return this.newarr;
 	}
 
-	public getresult() {
+	public getresult() :number[]{
 		return this.Intersection();
+	}
+	private union() {
+		// this.empty.concat(this.arrTwo);
+		this.arrTwo.forEach(el => this.newarr.push(el));
+		for (let y = 0; y < this.arrOne.length; y++) {
+			if (this.arrTwo.includes(this.arrOne[y])) {
+				this.arrTwo.splice(y, 1);
+			} else {
+				this.newarr.push(this.arrOne[y]);
+			}
+		}
+		return this.newarr;
 	}
 }
 
