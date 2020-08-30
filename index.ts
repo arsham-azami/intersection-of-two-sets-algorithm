@@ -1,5 +1,5 @@
-class Intersection {
-	private arrOne: number[];
+class Setcompare {
+	arrOne: number[];
 	arrTwo: number[];
 	newarr: number[];
 
@@ -44,7 +44,6 @@ class Intersection {
 const setOne = [43, 65, 21, 66, 76];
 const setTwo = [90, 65, 98, 60, 23, 76, 21];
 
-const set = new Intersection(setOne, setTwo);
+const compareOne = new Setcompare(setOne, setTwo);
 
-// console.log(set.getintersection());
-console.log(set.getunion());
+console.log(compareOne.getunion()); //[90, 65, 98, 60, 23, 76, 21, 43, 66]
