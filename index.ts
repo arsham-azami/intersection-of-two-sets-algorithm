@@ -21,6 +21,7 @@ class Intersection {
 	public getintersection(): number[] {
 		return this.Intersection();
 	}
+
 	private union(): number[] {
 		// this.empty.concat(this.arrTwo);
 		this.arrTwo.forEach(el => this.newarr.push(el));
@@ -33,9 +34,11 @@ class Intersection {
 		}
 		return this.newarr;
 	}
+
 	public getunion(): number[] {
 		return this.union();
 	}
+	
 }
 
 const setOne = [43, 65, 21, 66, 76];
@@ -44,4 +47,4 @@ const setTwo = [90, 65, 98, 60, 23, 76, 21];
 const set = new Intersection(setOne, setTwo);
 
 // console.log(set.getintersection());
-console.log(set.getunion())
+console.log(set.getunion());
