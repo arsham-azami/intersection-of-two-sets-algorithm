@@ -23,7 +23,7 @@ class Intersection {
 	}
 
 	private union(): number[] {
-		// this.empty.concat(this.arrTwo);
+
 		this.arrTwo.forEach(el => this.newarr.push(el));
 		for (let y = 0; y < this.arrOne.length; y++) {
 			if (this.arrTwo.includes(this.arrOne[y])) {
@@ -38,7 +38,7 @@ class Intersection {
 	public getunion(): number[] {
 		return this.union();
 	}
-	
+
 }
 
 const setOne = [43, 65, 21, 66, 76];
