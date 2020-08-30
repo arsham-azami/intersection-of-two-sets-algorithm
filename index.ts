@@ -18,7 +18,7 @@ class Intersection {
 		return this.newarr;
 	}
 
-	public getintersection() :number[]{
+	public getintersection(): number[] {
 		return this.Intersection();
 	}
 	private union(): number[] {
@@ -33,8 +33,8 @@ class Intersection {
 		}
 		return this.newarr;
 	}
-	getunion(): number[]{
-		return this.union()
+	getunion(): number[] {
+		return this.union();
 	}
 }
 
@@ -43,4 +43,5 @@ const setTwo = [90, 65, 98, 60, 23, 76, 21];
 
 const set = new Intersection(setOne, setTwo);
 
-console.log(set.getintersection());
+// console.log(set.getintersection());
+console.log(set.getunion())
